@@ -116,6 +116,7 @@ public class AdapterChat extends RecyclerView.Adapter<AdapterChat.MyHolder> {
                 holder.isSeenTv.setText("Seen");
             }
             else {
+                Toast.makeText(context, "" + chatList.get(position).isSeen(), Toast.LENGTH_SHORT).show();
                 holder.isSeenTv.setText("Delivered");
             }
         } else {

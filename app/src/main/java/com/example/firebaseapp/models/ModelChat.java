@@ -58,10 +58,12 @@ public class ModelChat {
         this.type = type;
     }
 
+    @PropertyName("isSeen")
     public boolean isSeen() {
         return isSeen;
     }
-
+    
+    @PropertyName("isSeen")
     public void setSeen(boolean seen) {
         isSeen = seen;
     }
